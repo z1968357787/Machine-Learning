@@ -65,7 +65,7 @@ model = LSTM_modle()
 y_train = np.asarray(y_train)
 
 #model training
-model.fit(pad_train, y_train, batch_size = 64, validation_split = 0.1, epochs = 2)
+model.fit(pad_train, y_train, batch_size = 64, validation_split = 0.1, epochs = 100)
 
 #prediction
 predicted_result = model.predict(pad_test)
